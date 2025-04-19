@@ -3,6 +3,8 @@
 This project implements a secure, privacy-preserving crime data query system across multiple cities (Mumbai & Delhi) using **Homomorphic Encryption (BFV)**, **Federated Search**, **OAuth2 Authentication**, and **Blockchain Logging**.
 
 ---
+Link for the Files and CSV's used: [https://drive.google.com/file/d/1U6Sr7pMKSAC9_woecOP59vBEsryTOwNj/view?usp=sharing]
+---
 
 ## 🚀 Features
 
@@ -53,7 +55,7 @@ POSTGRES_PASSWORD=your_db_password
 MUMBAI_DB=mumbai_crime_db
 DELHI_DB=delhi_crime_db
 ```
-
+---
 ## 🔐 Encryption & Storage
 ### Step 1: Generate BFV Encryption Context
 ```bash
@@ -64,7 +66,7 @@ python generate_bfv_context.py
 python encrypt_db.py
 ```
 This script loads raw data from delhi_crime_data_modified.py and mumbai_crime_data_modified.py, encrypts sensitive fields, and saves them (both plaintext and encrypted) to PostgreSQL.
-
+---
 ## 🔍 Encrypted Federated Search
 Run:
 ```bash
@@ -77,7 +79,7 @@ This will:
 - Match encrypted values securely
 - Simulate a ZKP-based verification
 - Append the search to search_blockchain.json
-
+---
 ## 🔒 OAuth2 Authentication (Mock)
 ### ▶️ Start the Auth Server
 ```bash
@@ -88,6 +90,7 @@ python auth_server.py
 python client_app.py
 ```
 This will simulate the OAuth2 flow using client_secrets.json. After authentication, an access token will be issued and printed.
+---
 ## 👤 Author
 Sakshi (22BIT0515)
 
