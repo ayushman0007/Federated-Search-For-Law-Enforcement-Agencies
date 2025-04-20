@@ -41,13 +41,13 @@ git clone https://github.com/your-username/FederatedSearchForLawEnforcementAgenc
 cd crime-encryption-search
 pip install -r requirements.txt
 ```
-### ✅ 3. Set Up PostgreSQL Databases
+### ✅ 2. Set Up PostgreSQL Databases
 Create two databases:
 ```bash
 createdb mumbai_crime_db
 createdb delhi_crime_db
 ```
-### ✅ 4. Add Environment Variables
+### ✅ 3. Add Environment Variables
 Create a .env file: 
 ```bash
 POSTGRES_USER=your_db_user
