@@ -92,6 +92,6 @@ python client_app.py
 This will simulate the OAuth2 flow using client_secrets.json. After authentication, an access token will be issued and printed.
 ---
 ## 👤 Author
-Sakshi (22BIT0515)
+Ayushman Singh
 
-Ayushman Singh (22BIT0473)
+Sakshi
