@@ -1,12 +1,16 @@
-# 🛡️ Secure Federated Search for Law Enforcement Agencies using Homomorphic Encryption & Blockchain
+# Secure Federated Search for Law Enforcement Agencies using Homomorphic Encryption & Blockchain
 
 This project implements a secure, privacy-preserving crime data query system across multiple cities (Mumbai & Delhi) using **Homomorphic Encryption (BFV)**, **Federated Search**, **OAuth2 Authentication**, and **Blockchain Logging**.
 
 ---
-Link for the Files and CSV's used: [https://drive.google.com/file/d/1U6Sr7pMKSAC9_woecOP59vBEsryTOwNj/view?usp=sharing]
+Link for the Files and CSV's used: <a href="https://drive.google.com/file/d/1U6Sr7pMKSAC9_woecOP59vBEsryTOwNj/view?usp=sharing" style="font-size:12px;">https://drive.google.com/file/d/1U6Sr7pMKSAC9_woecOP59vBEsryTOwNj/view?usp=sharing</a>
+
 ---
 
+
+
 ## 🚀 Features
+
 
 - 🔐 **BFV Homomorphic Encryption** using TenSEAL for searchable encrypted fields.
 - 🏙️ **Federated search** across multiple PostgreSQL databases (Mumbai & Delhi).
@@ -21,13 +25,14 @@ Link for the Files and CSV's used: [https://drive.google.com/file/d/1U6Sr7pMKSAC
 ## 🛠️ Technologies Used
 
 | Category         | Tool/Library              |
-|------------------|---------------------------|
+|:----------------:|:------------------------:|
 | Programming      | Python 3.10+              |
 | Database         | PostgreSQL                |
 | Encryption       | TenSEAL (BFV Scheme)      |
 | Auth Simulation  | Flask, OAuth2             |
 | Blockchain       | Custom JSON ledger        |
 | Env Management   | python-dotenv             |
+
 
 ---
 
@@ -65,7 +70,6 @@ python generate_bfv_context.py
 ```bash
 python encrypt_db.py
 ```
-This script loads raw data from delhi_crime_data_modified.py and mumbai_crime_data_modified.py, encrypts sensitive fields, and saves them (both plaintext and encrypted) to PostgreSQL.
 ---
 ## 🔍 Encrypted Federated Search
 Run:
@@ -89,7 +93,6 @@ python auth_server.py
 ```bash
 python client_app.py
 ```
-This will simulate the OAuth2 flow using client_secrets.json. After authentication, an access token will be issued and printed.
 ---
 ## 👤 Author
 Ayushman Singh
